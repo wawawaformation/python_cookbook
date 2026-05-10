@@ -1,0 +1,9 @@
+{
+  "name": "David",
+  "stack": [
+    "php",
+    "python",
+    "postgresql"
+  ],
+  "available": true
+}
