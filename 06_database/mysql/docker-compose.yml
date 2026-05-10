@@ -1,0 +1,17 @@
+services:
+  mysql:
+    image: mysql:8.4
+    container_name: python-cookbook-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: cookbook
+      MYSQL_USER: cookbook
+      MYSQL_PASSWORD: cookbook
+      MYSQL_ROOT_PASSWORD: root
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  mysql_data:

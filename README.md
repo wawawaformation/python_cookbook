@@ -20,15 +20,35 @@ pip install -r requirements.txt
 
 ```bash
 python3 01_python_base/functions.py
+python3 01_python_base/list_comprehensions.py
+python3 01_python_base/decorators.py
+python3 01_python_base/dataclasses_example.py
+python3 01_python_base/unpacking.py
+python3 01_python_base/itertools_enumerate_zip.py
+python3 01_python_base/lambda_map_filter_sorted.py
+python3 01_python_base/args_kwargs.py
+python3 01_python_base/match_case.py
+python3 01_python_base/exceptions_advanced.py
+python3 01_python_base/property_example.py
+python3 01_python_base/inheritance_composition.py
 python3 02_json/write_json.py
 python3 03_requests/get.py
+uvicorn 05_fastapi.minimal_api:app --reload
+python3 06_database/sqlite/crud_minimal.py
+python3 06_database/mysql/crud_minimal.py
+python3 07_async/thread_basic.py
+cd 09_tests && python3 unittest_basic.py
 ```
 
 ## Sections actuelles
 
-- `01_python_base` : la syntaxe Python dont tu as besoin tout le temps
+- `01_python_base` : la syntaxe Python dont tu as besoin tout le temps, avec aussi quelques styles plus avancés comme les compréhensions, décorateurs, générateurs, context managers, dataclasses, unpacking, `lambda`, `*args/**kwargs`, `match/case`, `@property`, héritage et composition
 - `02_json` : lire et écrire du JSON rapidement
 - `03_requests` : appeler des API avec `requests`
+- `05_fastapi` : routes API, paramètres, validation Pydantic et erreurs HTTP
+- `06_database` : SQLite avec la lib standard, PostgreSQL avec `psycopg` et MySQL avec `PyMySQL`
+- `07_async` : async, plusieurs tâches, threads et passage de l'un a l'autre
+- `09_tests` : écrire des tests avec `unittest` et `pytest`
 - `08_utils` : variables d'environnement, logging, arguments CLI, timers
 
 ## Philosophie
@@ -46,6 +66,8 @@ python3 03_requests/get.py
 4. `08_utils`
 5. `05_fastapi`
 6. `06_database`
+7. `07_async`
+8. `09_tests`
 
 ## Notes pour un développeur PHP
 

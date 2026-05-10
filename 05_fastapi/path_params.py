@@ -1,0 +1,14 @@
+"""Parametres de chemin dans FastAPI."""
+
+from fastapi import FastAPI
+
+
+app = FastAPI()
+
+
+@app.get("/users/{user_id}")
+def get_user(user_id: int) -> dict[str, object]:
+	return {
+		"id": user_id,
+		"name": f"User {user_id}",
+	}
